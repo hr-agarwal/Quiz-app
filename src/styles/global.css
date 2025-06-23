@@ -1,12 +1,27 @@
-body {
+/* Global reset and font */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
-  background: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
-  background-size: cover;
   color: #ffffff;
+}
+
+/* Starry background image — mobile friendly */
+body {
+  background-image: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll; /* ✅ Fix for iOS Safari */
   position: relative;
 }
 
+/* Optional: Dark overlay for readability */
 body::before {
   content: '';
   position: fixed;
@@ -18,10 +33,7 @@ body::before {
   z-index: -1;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* Links and buttons styling */
 a {
   text-decoration: none;
   color: inherit;
@@ -29,4 +41,5 @@ a {
 
 button {
   cursor: pointer;
+  font-family: inherit;
 }
