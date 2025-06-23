@@ -1,26 +1,11 @@
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: #ffffff;
-}
-
-
 body {
-  background-image: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-repeat: no-repeat;
-  background-position: center center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
   background-size: cover;
-  background-attachment: scroll; 
+  color: #ffffff;
   position: relative;
 }
-
 
 body::before {
   content: '';
@@ -33,6 +18,9 @@ body::before {
   z-index: -1;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 a {
   text-decoration: none;
@@ -41,5 +29,5 @@ a {
 
 button {
   cursor: pointer;
-  font-family: inherit;
 }
+
