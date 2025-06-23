@@ -1,4 +1,4 @@
-/* Global reset and font */
+
 * {
   box-sizing: border-box;
 }
@@ -11,17 +11,17 @@ html, body {
   color: #ffffff;
 }
 
-/* Starry background image — mobile friendly */
+
 body {
   background-image: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: scroll; /* ✅ Fix for iOS Safari */
+  background-attachment: scroll; 
   position: relative;
 }
 
-/* Optional: Dark overlay for readability */
+
 body::before {
   content: '';
   position: fixed;
@@ -33,7 +33,7 @@ body::before {
   z-index: -1;
 }
 
-/* Links and buttons styling */
+
 a {
   text-decoration: none;
   color: inherit;
